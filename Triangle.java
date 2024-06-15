@@ -6,7 +6,7 @@ public class Triangle extends GeometricObject{
     private double side2 = 1;
     private double side3 = 1;
     private boolean filled = false;
-    private String color = "";
+    private String color = "white";
 
     Triangle(){
     }
@@ -62,12 +62,10 @@ public class Triangle extends GeometricObject{
       	 double side3 = sc.nextDouble();
         System.out.println("Is this triangle filled? (Enter true or false)");
       	 boolean filled = sc.nextBoolean();
-           String color = "";
+           String color = "white";
         if (filled){
             System.out.println("What color is the triangle?");
           	 color = sc.next();
-        } else {
-             color = null;
         }
         Triangle triangle1 = new Triangle(side1, side2, side3, filled, color);
         triangle1.toString();
